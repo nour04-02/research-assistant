@@ -128,7 +128,7 @@ research_assistant/
 Requires **Python 3.10+**.
 
 ```bash
-git clone https://github.com/<your-username>/research-assistant.git
+git clone [https://github.com/<your-username>/research-assistant](https://github.com/nour04-02/research-assistant).git
 cd research-assistant
 
 python -m venv venv
