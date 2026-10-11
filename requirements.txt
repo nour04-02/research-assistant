@@ -1,0 +1,16 @@
+streamlit>=1.36
+pandas
+tabulate
+plotly
+requests
+pypdf
+faiss-cpu
+rank-bm25
+sentence-transformers
+langchain-core
+langchain-community
+langchain-classic
+langchain-text-splitters
+langchain-huggingface
+arxiv
+pyvis

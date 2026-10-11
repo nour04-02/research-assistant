@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets and local settings
+.env
+.streamlit/secrets.toml
+
+# Downloaded papers and outputs
+*.pdf
+*.csv
+*.bib
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
