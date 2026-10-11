@@ -175,7 +175,7 @@ This is an MVP, so there are known issues I am aware of:
   - Each paper needs more than one LLM call (extraction + facts), and every call goes over the network to Kaggle.
 - **Kaggle sessions:** the free GPU session can stop after inactivity, and the ngrok URL changes on every run.
 - **PDF parsing:** scanned PDFs (images) are not supported, and tables or two-column layouts are sometimes read imperfectly.
-- **LLM accuracy: The *Related Work* output is a draft, not final text.
+- **LLM accuracy**: The *Related Work* output is a draft, not final text.
 
 ---
 
@@ -185,9 +185,7 @@ Planned improvements for the next versions:
 **Speed (top priority)**
 - [ ] Stream LLM responses token by token instead of waiting for the full answer
 - [ ] Run extraction for several papers in parallel, and merge the extraction + facts calls into one
-- [ ] Use a faster inference engine on the server (vLLM) and smaller or more efficient models
 - [ ] Cache embeddings, indexes and extractions on disk so papers are not reprocessed every session
-- [ ] Optional GPU embeddings and a lighter reranker
 
 **Quality**
 - [ ] Better PDF parsing for tables, figures and two-column layouts, plus OCR for scanned papers
