@@ -122,7 +122,7 @@ research_assistant/
 4. Click **Run All**. The first run downloads the model and takes about 10 minutes.
 5. Copy the URL printed in the last cell (`https://xxxx.ngrok-free.app`). Keep the notebook running.
 
-> Never commit your real ngrok token to GitHub.
+
 
 ### Part 2: Run the app locally
 Requires **Python 3.10+**.
