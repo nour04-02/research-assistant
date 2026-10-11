@@ -86,7 +86,7 @@ researcher can verify it.
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 - **LLM:** Mistral-Nemo-Instruct-2407 (4-bit, bitsandbytes), Transformers
 - **Serving:** FastAPI, Uvicorn, ngrok (on Kaggle GPU)
 - **RAG:** LangChain, FAISS, BM25 (`rank-bm25`), Sentence-Transformers (embeddings + cross-encoder reranker)
@@ -150,7 +150,7 @@ Paste the ngrok URL in the sidebar and click **Test connection**.
 
 ---
 
-## 🧭 How to Use
+##  How to Use
 1. **Add papers:** upload PDFs from the sidebar, or search arXiv in the 🔎 **Discover** tab.
 2. **Extract:** get the 6-field summary table for every paper.
 3. **Compare:** choose 2 or more papers to get the comparison, differences and research gaps.
