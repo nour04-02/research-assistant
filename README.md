@@ -56,7 +56,7 @@ researcher can verify it.
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ```
                  ┌──────────────────────────── Local machine (Streamlit) ────────────────────────────┐
@@ -117,7 +117,7 @@ research_assistant/
 
 ### Part 1: Start the LLM server on Kaggle
 1. Create a new notebook on [Kaggle](https://www.kaggle.com) and choose **File > Import Notebook** → `kaggle_server.ipynb`.
-2. In **Settings**: set **Accelerator = GPU T4** and **Internet = On**.
+2. In **Settings**: set **Accelerator = GPU T4**.
 3. Get a free auth token from [dashboard.ngrok.com](https://dashboard.ngrok.com) and paste it into `NGROK_TOKEN`.
 4. Click **Run All**. The first run downloads the model and takes about 10 minutes.
 5. Copy the URL printed in the last cell (`https://xxxx.ngrok-free.app`). Keep the notebook running.
