@@ -175,8 +175,7 @@ This is an MVP, so there are known issues I am aware of:
   - Each paper needs more than one LLM call (extraction + facts), and every call goes over the network to Kaggle.
 - **Kaggle sessions:** the free GPU session can stop after inactivity, and the ngrok URL changes on every run.
 - **PDF parsing:** scanned PDFs (images) are not supported, and tables or two-column layouts are sometimes read imperfectly.
-- **LLM accuracy:** extracted information and generated text can contain mistakes. The fact-check helps, but every
-  output should be reviewed before it is used in real research. The *Related Work* output is a draft, not final text.
+- **LLM accuracy: The *Related Work* output is a draft, not final text.
 
 ---
 
@@ -186,18 +185,16 @@ Planned improvements for the next versions:
 **Speed (top priority)**
 - [ ] Stream LLM responses token by token instead of waiting for the full answer
 - [ ] Run extraction for several papers in parallel, and merge the extraction + facts calls into one
-- [ ] Use a faster inference engine on the server (e.g. vLLM) and smaller or more efficient models
+- [ ] Use a faster inference engine on the server (vLLM) and smaller or more efficient models
 - [ ] Cache embeddings, indexes and extractions on disk so papers are not reprocessed every session
 - [ ] Optional GPU embeddings and a lighter reranker
 
 **Quality**
 - [ ] Better PDF parsing for tables, figures and two-column layouts, plus OCR for scanned papers
-- [ ] Evaluation set to measure retrieval and answer quality (e.g. faithfulness and answer relevance)
+- [ ] Evaluation set to measure retrieval and answer quality (faithfulness and answer relevance)
 - [ ] Smarter chunking by sections and paragraphs
 
 **Product**
-- [ ] Persistent paper library and saved chats
-- [ ] Deployment to a permanent server instead of Kaggle + ngrok
 - [ ] Export full literature review reports (Word / PDF)
 - [ ] More paper sources (Semantic Scholar, PubMed)
 
