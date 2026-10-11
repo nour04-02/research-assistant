@@ -1,6 +1,6 @@
 # 🔬 AI Research Assistant
 
-> ⚠️ **Note: This project is an MVP (Minimum Viable Product).**
+>  **Note: This project is an MVP (Minimum Viable Product).**
 > It is a working first version built to prove the idea end to end. Some operations are currently **slow**
 > (loading the embedding and reranker models for the first time, and running several LLM calls per paper
 > on a free Kaggle GPU through ngrok). Improving speed is the top priority for the next versions,
@@ -13,7 +13,7 @@ a **router agent** and an automatic **hallucination check**, all in a simple **S
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 - [The Problem](#-the-problem)
 - [Features](#-features)
 - [How It Works](#-how-it-works)
@@ -26,7 +26,7 @@ a **router agent** and an automatic **hallucination check**, all in a simple **S
 
 ---
 
-## ❓ The Problem
+##  The Problem
 Reviewing literature is slow. A researcher has to search for papers, read each one, pull out the method,
 dataset and results, compare them side by side, and finally write a related work section with correct citations.
 This assistant automates most of that workflow, while showing the sources behind every answer so the
@@ -34,24 +34,24 @@ researcher can verify it.
 
 ---
 
-## ✨ Features
+##  Features
 
 | Tab | What it does |
 |---|---|
-| 🔎 **Discover** | Search arXiv by topic, select papers, and download + index them automatically with clean metadata (title, authors, year). |
-| 📄 **Extract** | Extracts 6 structured fields from every paper: **Paper, Methodology, Dataset, Results, Advantages, Limitations**. Export as CSV. |
-| ⚖️ **Compare** | A sequential chain: *Extract → Compare → Differences*. Produces an overview, common ground, methodology comparison, key differences and **research gaps**. Export as Markdown. |
-| 📊 **Results** | Extracts numeric results (model, dataset, metric, value) as JSON and draws an interactive bar chart to compare papers on the same metric. |
-| 🕸️ **Graph** | An interactive knowledge graph showing how papers connect through shared **methods, datasets and tasks**. |
-| ✍️ **Related Work** | Writes an academic *Related Work* draft with numbered citations, plus a references list and a ready **BibTeX** file. |
-| 💬 **Ask** | Chat with all papers at once. Answers include page-level citations and the retrieved source chunks. |
+|  **Discover** | Search arXiv by topic, select papers, and download + index them automatically with clean metadata (title, authors, year). |
+|  **Extract** | Extracts 6 structured fields from every paper: **Paper, Methodology, Dataset, Results, Advantages, Limitations**. Export as CSV. |
+|  **Compare** | A sequential chain: *Extract → Compare → Differences*. Produces an overview, common ground, methodology comparison, key differences and **research gaps**. Export as Markdown. |
+|  **Results** | Extracts numeric results (model, dataset, metric, value) as JSON and draws an interactive bar chart to compare papers on the same metric. |
+|  **Graph** | An interactive knowledge graph showing how papers connect through shared **methods, datasets and tasks**. |
+|  **Related Work** | Writes an academic *Related Work* draft with numbered citations, plus a references list and a ready **BibTeX** file. |
+|  **Ask** | Chat with all papers at once. Answers include page-level citations and the retrieved source chunks. |
 
 **Smart features inside Ask:**
-- 🤖 **Agent mode:** a router chain reads your request and picks the right tool automatically
+-  **Agent mode:** a router chain reads your request and picks the right tool automatically
   (Q&A, compare, chart, graph, related work, or arXiv search).
-- ✅ **Fact-check:** a second chain checks every sentence of the answer against the retrieved sources and labels it
-  ✅ supported, 🟡 partial or ⚠️ unsupported, with an overall **faithfulness score**.
-- 🌍 **Arabic support:** ask in Arabic about English papers (multilingual embeddings + multilingual reranker),
+-  **Fact-check:** a second chain checks every sentence of the answer against the retrieved sources and labels it
+   supported, 🟡 partial or ⚠️ unsupported, with an overall **faithfulness score**.
+-  **Arabic support:** ask in Arabic about English papers (multilingual embeddings + multilingual reranker),
   and get answers in English or Arabic.
 
 ---
@@ -95,7 +95,7 @@ researcher can verify it.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 research_assistant/
@@ -113,7 +113,7 @@ research_assistant/
 
 ---
 
-## 🚀 Installation and Running
+##  Installation and Running
 
 ### Part 1: Start the LLM server on Kaggle
 1. Create a new notebook on [Kaggle](https://www.kaggle.com) and choose **File > Import Notebook** → `kaggle_server.ipynb`.
@@ -166,7 +166,7 @@ Example questions:
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 This is an MVP, so there are known issues I am aware of:
 
 - **Speed:** the main limitation right now.
@@ -180,7 +180,7 @@ This is an MVP, so there are known issues I am aware of:
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 Planned improvements for the next versions:
 
 **Speed (top priority)**
@@ -201,10 +201,3 @@ Planned improvements for the next versions:
 - [ ] Export full literature review reports (Word / PDF)
 - [ ] More paper sources (Semantic Scholar, PubMed)
 
----
-
-## 👩‍💻 Author
-**Nena**, AI student at Jordan University of Science and Technology (JUST).
-Built as the final project for an LLMs course.
-
-Feedback and suggestions are welcome. Feel free to open an issue.
